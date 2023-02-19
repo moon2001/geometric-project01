@@ -131,8 +131,8 @@
                   <p class="text-center">Area(A) = <span id="para-1">b</span> * <span id="para-2">h</span> </p>
                   <p class="text-center">Area(A): <span id="parallelogram-calculated-value"></span> </p> 
                   <div class="mb-3 text-center">
-                    <input type="text" id="parallelogram-input-1" placeholder="b">cm 
-                    <input type="text" id="parallelogram-input-2" placeholder="h">cm 
+                    <input type="text" id="parallelogram-input-1" placeholder="b"> m 
+                    <input type="text" id="parallelogram-input-2" placeholder="h"> m 
                   </div> <br>
                   <button id="parallelogram-btn" type="button" class="btn btn-dark w-100 mx-auto mt-3" >CALCULATE</button>
                 </div>
@@ -156,8 +156,8 @@
                   <p class="text-center">Area(A) = 0.5* <span id="rho-1"> d <sub>1</sub> </span> * <span id="rho-2">d <sub>2</sub> </span> </p>
                   <p class="text-center">Area(A): <span id="rhombus-calculated-value"></span> </p>
                   <div class="mb-4 mt-2 text-center">
-                    <input type="text" id="rhombus-input-1" placeholder="d=16cm">cm 
-                    <input type="text" id="rhombus-input-2" placeholder="e=16cm">cm
+                    <input type="text" id="rhombus-input-1" placeholder="d=16m">m 
+                    <input type="text" id="rhombus-input-2" placeholder="e=16m">m
                   </div>
                   <button id="rhombus-btn" type="button" class="btn btn-primary w-100 mx-auto mt-3">CALCULATE</button>
                 </div>
@@ -176,8 +176,8 @@
                   <p class="text-center">Area(A) = 0.5* <span id="pen-1">d</span> * <span id="pen-2">d</span> </p>
                   <p class="text-center">Area(A): <span id="pentagon-calculated-value"></span></p>
                   <div class="mb-3 text-center">
-                    <input type="text" id="pentagon-input-1" placeholder="p=16cm">cm
-                    <input type="text" id="pentagon-input-2" placeholder="b=16cm">cm 
+                    <input type="text" id="pentagon-input-1" placeholder="p=16m"> m
+                    <input type="text" id="pentagon-input-2" placeholder="b=16m"> m 
                   </div>
                   <br>
                   <button id="pentagon-btn" type="button" class="btn btn-secondary w-100 mx-auto" >CALCULATE</button>
@@ -211,34 +211,34 @@
         </div>
         <!-- 6TH card end -->
 
-        <div class="area-section ms-3 mt-5">
-          <h6 class="text-center text-decoration-underline">Area Calculation</h6>
+        <div class="area-section ms-3 mt-5" onmouseover="this.style.backgroundColor = getRandomColor()">
+          <h6 class="text-center text-decoration-underline text-bg-info">Area Calculation</h6>
           <ol>
             <li id="triangle">
-              1.Triangle: <span id="triangle-calculate-value"></span>cm<sup>2</sup>
-              <button class="mt-3 me-3 ms-3">Convert to m</button>
+              1.Triangle: <span id="triangle-calculate"></span>m<sup>2</sup>
+            
             </li>
             <li id="rectangle">
-             2. Rectangle: <span id="rectangle-calculate-value"></span>cm<sup>2</sup>
-              <button class="mt-3 me-3 ms-3">Convert to m</button>
+             2. Rectangle: <span id="rectangle-calculate-value"></span>m<sup>2</sup>
+              
             </li>
             <li id="parallelogram">
-             3. Parallelogram: <span id="Parallelogram-calculate-value"></span> cm <sup>2</sup>
-              <button class="mt-3 me-3 ms-1">Convert to m</button>
+             3. Parallelogram: <span id="Parallelogram-calculate-value"></span> m <sup>2</sup>
+              
             </li>
             <li id="rhombus">
-             4. Rhombus: <span id="rhombus-calculate-value"></span>cm<sup>2</sup>
-              <button class="mt-3 me-3 ms-3">Convert to m</button>
+             4. Rhombus: <span id="rhombus-calculate-value"></span>m<sup>2</sup>
+              
             </li>
 
             <li id="pentagon">
-             5. Pentagon: <span id="pentagon-calculate-value"></span>cm<sup>2</sup>
-              <button class="mt-3 me-3 ms-3">Convert to m</button>
+             5. Pentagon: <span id="pentagon-calculate-value"></span>m<sup>2</sup>
+              
             </li>
 
             <li id="ellipse">
-             6. Ellipse: <span id="ellipse-calculate-value"></span>cm<sup>2</sup>
-              <button class="mt-3 me-3 ms-3">Convert to m</button>
+             6. Ellipse: <span id="ellipse-calculate-value"></span>m<sup>2</sup>
+             
             </li>
           </ol>
         </div>
