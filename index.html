@@ -9,65 +9,78 @@
   </head>
   <body>
        <header>
-        <nav class="navbar bg-body-secondary">
+        <nav class="navbar bg-body-tertiary">
           <div class="container-fluid">
             <h1>Interactive
-              <p class="nav-tabs" >Geometry Genius</p>
+                <p class="navbar-brand">Geometry Genius</p>
+                
             </h1>
             
+            
+            
+              
             <button type="button" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#exampleModal">
                BLOG
-            </button>
+                </button>
+                 <!--Blog modal -->
+                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Question-answer</h1>
+                          
+                        </div>
+                        <div class="modal-body">
+                            <h1>What is DOM and what is the purpose of DOM?</h1>
+  <p>DOM stands for document object model.It is a programming interface for web documents. It defines logical structure of document. </p>
+  <p>The purpose of DOM is speeding up the web page and allow to create,change, remove element from a website </p>
 
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Question-answer</h1>
-                    
+  <br>
+  
+
+  <h1>How will you select HTML elements using DOM? Name the DOM methods.</h1>
+
+  <p>There are most popular 5 ways/methods to select HTML elements in a DOM using selectors. Those are:
+    <ol>
+        <li>getElementsByTagName()</li>
+        <li>getElementsByClassName()</li>
+        <li>getElementById()</li>
+        <li>querySelector()</li>
+        <li>querySelectorAll()</li>
+    </ol>
+
+    
+
+    <h1> What is event bubble?</h1>
+    <p> When an element receives a event which is bubbling up in the process of receive until it reached to the root element that is called event bubble in Dom  </p>
+
+    <br>
+
+    <h1>What is a callback function and why will you use it?</h1>
+
+    <p>
+        callback function: When a function passed into another function as an argument then provoked the inside or outer function to complete the needed action is called callback function
+
+
+    </p>
+    <p>
+        A callback function is used to execute a function sequentially and appropriately
+    </p>
+
+                          
+                        </div>
+                        
+                      </div>
+                    </div>
                   </div>
-                  <div class="modal-body">
-                      <h1>What is DOM and what is the purpose of DOM?</h1>
-          <p>Document object model is referred to as DOM. that is a programming interface for HTML documents, giving developers access to and control over the document's content and structure using programming languages like JavaScript.</p>
-          
-          <br>
-          
-          
-          <h1>How will you select HTML elements using DOM? Name the DOM methods.</h1>
-          <p>The DOM can be used in a variety of ways to choose HTML elements. The following are some of the most used DOM methods for choosing elements: <br>
-          
-          1.getElementById(): This method chooses an element based on the value of its ID attribute. <br>
-          
-          2.getElementsByTagName(): picks out all items that have a particular tag name. <br>
-          
-          3. getElementsByClassName(): all elements with the specified class attribute value are chosen. <br>
-          
-          4. querySelector(): chooses the first matching element. <br>
-          
-          5. querySelectorAll(): selects all components that adhere to a the CSS selector.</p>
-          <br>
-          
-          <h1> What is event bubble?</h1>
-          <p>The DOM has a concept known as event bubbling (Document Object Model). When an element receives an event, it occurs. until it reaches the root element in the DOM tree, the event bubbles up to its parent and ancestor elements.</p>
-          
-          <br>
-          
-                    
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-                
             
           </div>
         </nav>
        </header> 
     <!-- header section end -->
 
-
-    <!--main section start-->
-    <main>
+<!--main section start-->
+      <main>
         <div>
           <div class="row row-cols-1 row-cols-md-3 g-2 mb-5 mt-5" id="">
             <!--first card-->
@@ -229,7 +242,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    
+    <script src="geometric.js"></script>
     
   </body>
 </html>
