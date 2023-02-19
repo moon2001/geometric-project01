@@ -9,10 +9,10 @@
   </head>
   <body>
        <header>
-        <nav class="navbar bg-body-tertiary">
+        <nav class="navbar bg-body-secondary">
           <div class="container-fluid">
             <h1>Interactive
-                <p class="navbar-brand">Geometry Genius</p>
+                <p class="navbar-collapse">Geometry Genius</p>
                 
             </h1>
             
@@ -84,36 +84,38 @@
         <div>
           <div class="row row-cols-1 row-cols-md-3 g-2 mb-5 mt-5" id="">
             <!--first card-->
-            <div class="col ps-5">
-              <div class="card h-100 w-100" onmouseover="this.style.backgroundColor = getRandomColor()">
-                <img src="images/triangle.png" class="card-img-top w-45 mx-auto mt-2" >
+            <div class="col ps-2">
+              <div class="card h-100 w-auto" onmouseover="this.style.backgroundColor = getRandomColor()">
+                <img src="images/triangle.png" class="card-img-top w-75 mx-auto mt-3" >
                 <div class="card-body">
                   <h5 class="card-title text-center">Triangle</h5>
-                  <p class="text-center">Area(A) = 0.5* <span id="tri-1">b</span>* <span id="tri-2">h</span> </p>
+                  <p class="text-center">Area(A) = 0.5 * <span id="tri-1">b</span>* <span id="tri-2">h</span> </p>
                   <p class="text-center">Area(A):<span id="triangle-calculated-value"></span></p>
                   <div class="mb-2 text-center">
-                    <input type="text" placeholder="b" id="triangle-input-1">cm 
-                    <input type="text" placeholder="h" id="triangle-input-2">cm 
-                  </div>
-                  <button id="triangle-btn" type="button" class="btn btn-primary w-100 mx-auto" >CALCULATE</button>
+                    <input type="text" placeholder="b" id="triangle-input-1"> m 
+                    <input type="text" placeholder="h" id="triangle-input-2"> m 
+                  </div><br>
+                  <button id="triangle-btn" type="button" class="btn btn-light w-100 mx-auto" >CALCULATE</button>
                 </div>
               </div>
             </div>
             <!-- first card end -->
 
-            <!-- 2nd card start -->
-            <div class="col ps-5">
-              <div class="card h-100 w-100" onmouseover="this.style.backgroundColor = getRandomColor()">
-                <img src="images/rectangle.png" class="card-img-top w-45 mx-auto mt-2" >
+            <!-- 2nd card  -->
+            <div class="col ps-2">
+              <div class="card h-100 w-auto" onmouseover="this.style.backgroundColor = getRandomColor()">
+                <img src="images/rectangle.png" class="card-img-top w-75 mx-auto mt-lg-4" >
                 <div class="card-body">
+                  <br>
                   <h5 class="card-title text-center">Rectangle</h5>
                   <p class="text-center">Area(A) = <span id="rec-1">W</span> * <span id="rec-2">I</span></p>
                   <p class="text-center">Area(A):<span id="rectangle-calculated-value"></span> </p>
                   <div class="mb-3 text-center">
-                    <input type="text" id="rectangle-input-1" placeholder="w">cm 
-                    <input type="text" id="rectangle-input-2"  placeholder="i">cm 
+                    <input type="text" id="rectangle-input-1" placeholder="w"> m 
+                    <input type="text" id="rectangle-input-2"  placeholder="i"> m 
                   </div>
-                  <button id="rectangle-btn" type="button" class="btn btn-primary w-100 mx-auto mt-3" >CALCULATE</button>
+                
+                  <button id="rectangle-btn" type="button" class="btn btn-danger w-100 mx-auto mt-2" >CALCULATE</button>
                 </div>
               </div>
             </div>          
@@ -121,18 +123,18 @@
 
             <!-- 3rd card start -->
 
-            <div class="col ps-5">
-              <div class="card h-100 w-100" onmouseover="this.style.backgroundColor = getRandomColor()">
-                <img src="images/parallelogram.png" class="card-img-top w-40 mx-auto mt-3" alt="...">
+            <div class="col ps-2">
+              <div class="card h-100 w-auto" onmouseover="this.style.backgroundColor = getRandomColor()">
+                <img src="images/parallelogram.png" class="card-img-top w-75 mx-auto mt-4" >
                 <div class="card-body">
                   <h5 class="card-title text-center">Parallelogram</h5>
                   <p class="text-center">Area(A) = <span id="para-1">b</span> * <span id="para-2">h</span> </p>
-                  <p class="text-center">Area(A): <span id="parallelogram-calculated-value"></span> </p>
+                  <p class="text-center">Area(A): <span id="parallelogram-calculated-value"></span> </p> 
                   <div class="mb-3 text-center">
                     <input type="text" id="parallelogram-input-1" placeholder="b">cm 
                     <input type="text" id="parallelogram-input-2" placeholder="h">cm 
-                  </div>
-                  <button id="parallelogram-btn" type="button" class="btn btn-primary w-100 mx-auto mt-3" >CALCULATE</button>
+                  </div> <br>
+                  <button id="parallelogram-btn" type="button" class="btn btn-dark w-100 mx-auto mt-3" >CALCULATE</button>
                 </div>
               </div>
             </div>
@@ -144,10 +146,11 @@
         <!-- 4th card start -->
 
           <div class="row row-cols-1 row-cols-md-3 g-2">
-            <div class="col ps-5">
-              <div class="card h-100 w-100" onmouseover="this.style.backgroundColor = getRandomColor()">
-                <img src="images/rhombus.png" class="card-img-top w-40 mx-auto mt-3" alt="...">
+            <div class="col ps-2">
+              <div class="card h-auto w-100" onmouseover="this.style.backgroundColor = getRandomColor()">
+                <img src="images/rhombus.png" class="card-img-top w-75 mx-auto mt-3">
                 <div class="card-body">
+                  <br>
                   <h5 class="card-title text-center">Rhombus</h5>
                   <br>
                   <p class="text-center">Area(A) = 0.5* <span id="rho-1"> d <sub>1</sub> </span> * <span id="rho-2">d <sub>2</sub> </span> </p>
@@ -164,9 +167,10 @@
 
              <!-- 5th card start -->
 
-            <div class="col ps-5">
-              <div class="card h-100 w-100" onmouseover="this.style.backgroundColor = getRandomColor()">
-                <img src="images/pentagon.png" class="card-img-top w-40 mx-auto mt-1" alt="...">
+            <div class="col ps-2">
+              <div class="card h-auto w-100" onmouseover="this.style.backgroundColor = getRandomColor()">
+                <br>
+                <img src="images/pentagon.png" class="card-img-top w-75 mx-auto mt-1" alt="...">
                 <div class="card-body">
                   <h5 class="card-title text-center">Pentagon</h5>
                   <p class="text-center">Area(A) = 0.5* <span id="pen-1">d</span> * <span id="pen-2">d</span> </p>
@@ -175,7 +179,8 @@
                     <input type="text" id="pentagon-input-1" placeholder="p=16cm">cm
                     <input type="text" id="pentagon-input-2" placeholder="b=16cm">cm 
                   </div>
-                  <button id="pentagon-btn" type="button" class="btn btn-primary w-100 mx-auto" >CALCULATE</button>
+                  <br>
+                  <button id="pentagon-btn" type="button" class="btn btn-secondary w-100 mx-auto" >CALCULATE</button>
                 </div>
               </div>
             </div>
@@ -183,18 +188,22 @@
 
             <!-- 6th card start -->
 
-            <div class="col ps-5">
-              <div class="card h-100 w-100" onmouseover="this.style.backgroundColor = getRandomColor()">
-                <img src="images/ellipse.png" class="card-img-top w-40 mx-auto mt-2" alt="...">
+            <div class="col ps-2">
+              <div class="card h-auto w-100" onmouseover="this.style.backgroundColor = getRandomColor()">
+                <br>
+                <img src="images/ellipse.png" class="card-img-top w-75 mx-auto mt-2" alt="...">
                 <div class="card-body">
+                  
                   <h5 class="card-title text-center">Ellipse</h5>
                   <p class="text-center">Area(A) = &pi;<span id="el-1">a</span><span id="el-2">b</span> </p>
                   <p class="text-center">Area(A): <span id="ellipse-calculated-value"></span> </p>
                   <div class="mb-5 text-center">
-                    <input type="text" id="ellipse-input-1" placeholder="a=16cm">cm 
-                    <input type="text" id="ellipse-input-2" placeholder="b=16cm">cm
+                    <br>
+                    <input type="text" id="ellipse-input-1" placeholder="a=16m"> m 
+                    <input type="text" id="ellipse-input-2" placeholder="b=16m"> m
                   </div>
-                  <button id="ellipse-btn" type="button" class="btn btn-primary w-100 mx-auto mt-4">CALCULATE</button>
+                  
+                  <button id="ellipse-btn" type="button" class="btn btn-success w-100 mx-auto mt-4">CALCULATE</button>
                 </div>
               </div>
             </div>
