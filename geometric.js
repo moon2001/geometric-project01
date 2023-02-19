@@ -32,7 +32,7 @@ function getRandomColor() {
    }
    function areaCalculation(Id)
    {
-     document.getElementById(Id).style.display = 'block';
+     document.getElementById(Id).style.display ='block';
    }
 
    //triangle btn 
@@ -53,5 +53,28 @@ function getRandomColor() {
     document.getElementById('triangle-calculate').innerText = triangleCalculate
     }
 })
+//rectangle btn
+document.getElementById('rectangle-btn').addEventListener('click',function(){
+    const triangleInput1 = idCall('rectangle-input-1');
+    const triangleInput2  =idCall ('rectangle-input-2');
+   if(!triangleInput1 || triangleInput1<0 && !triangleInput2 || triangleInput2<0)
+   {
+    alert('Please try again')
+   }
+    else{
+              document.getElementById('rec-1').innerText=triangleInput1;
+              document.getElementById('rec-2').innerText = triangleInput2;
+      const triangleCalculateId =  document.getElementById('rectangle-calculated-value');
+      const triangleCalculate = calculateValue(triangleInput1,triangleInput2)
+      triangleCalculateId.innerText = triangleCalculate;
+      areaCalculation('triangle');
+    document.getElementById('rectangle-calculate').innerText = triangleCalculate
+    }
+})
+
+
+
+
+
 
  

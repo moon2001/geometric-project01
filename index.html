@@ -109,7 +109,7 @@
                   <br>
                   <h5 class="card-title text-center">Rectangle</h5>
                   <p class="text-center">Area(A) = <span id="rec-1">W</span> * <span id="rec-2">I</span></p>
-                  <p class="text-center">Area(A):<span id="rectangle-calculated-value"></span> </p>
+                 <p class="text-center"> <span id="rectangle-calculated-value"></span> </p>
                   <div class="mb-3 text-center">
                     <input type="text" id="rectangle-input-1" placeholder="w"> m 
                     <input type="text" id="rectangle-input-2"  placeholder="i"> m 
@@ -129,7 +129,7 @@
                 <div class="card-body">
                   <h5 class="card-title text-center">Parallelogram</h5>
                   <p class="text-center">Area(A) = <span id="para-1">b</span> * <span id="para-2">h</span> </p>
-                  <p class="text-center">Area(A): <span id="parallelogram-calculated-value"></span> </p> 
+                  <p class="text-center"> <span id="parallelogram-calculated-value"></span> </p> 
                   <div class="mb-3 text-center">
                     <input type="text" id="parallelogram-input-1" placeholder="b"> m 
                     <input type="text" id="parallelogram-input-2" placeholder="h"> m 
@@ -213,34 +213,34 @@
 
         <div class="area-section ms-3 mt-5" onmouseover="this.style.backgroundColor = getRandomColor()">
           <h6 class="text-center text-decoration-underline text-bg-info">Area Calculation</h6>
-          <ol>
+          <ul style="list-style-type:lower-roman;">
             <li id="triangle">
-              1.Triangle: <span id="triangle-calculate"></span>m<sup>2</sup>
-            
+              Triangle: <span id="triangle-calculate"></span>m<sup>2</sup>
             </li>
+            <br>
             <li id="rectangle">
-             2. Rectangle: <span id="rectangle-calculate"></span>m<sup>2</sup>
-              
-            </li>
+             Rectangle: <span id="rectangle-calculate"></span>m<sup>2</sup>
+             </li>
+             <br>
             <li id="parallelogram">
-             3. Parallelogram: <span id="Parallelogram-calculate"></span> m <sup>2</sup>
-              
-            </li>
+             Parallelogram: <span id="Parallelogram-calculate"></span> m <sup>2</sup>
+             </li>
+             <br>
+
             <li id="rhombus">
-             4. Rhombus: <span id="rhombus-calculate"></span>m<sup>2</sup>
-              
-            </li>
+              Rhombus: <span id="rhombus-calculate"></span>m<sup>2</sup>
+              </li>
+              <br>
 
             <li id="pentagon">
-             5. Pentagon: <span id="pentagon-calculate"></span>m<sup>2</sup>
-              
+             Pentagon: <span id="pentagon-calculate"></span>m<sup>2</sup>
             </li>
-
+            <br>
             <li id="ellipse">
-             6. Ellipse: <span id="ellipse-calculate"></span>m<sup>2</sup>
+              Ellipse: <span id="ellipse-calculate"></span>m<sup>2</sup>
              
             </li>
-          </ol>
+          </ul>
         </div>
 
       </main>
