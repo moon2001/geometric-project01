@@ -72,6 +72,69 @@ document.getElementById('rectangle-btn').addEventListener('click',function(){
     }
 })
 
+//parallelogram btn
+document.getElementById('parallelogram-btn').addEventListener('click',function(){
+    const triangleInput1 = idCall('parallelogram-input-1');
+    const triangleInput2  =idCall ('parallelogram-input-2');
+   if(!triangleInput1 || triangleInput1<0 && !triangleInput2 || triangleInput2<0)
+   {
+    alert('Please try again')
+   }
+    else{
+              document.getElementById('para-1').innerText=triangleInput1;
+              document.getElementById('para-2').innerText = triangleInput2;
+      const triangleCalculateId =  document.getElementById('parallelogram-calculated-value');
+      const triangleCalculate = calculateValue(triangleInput1,triangleInput2)
+      triangleCalculateId.innerText = triangleCalculate;
+      areaCalculation('parallelogram');
+    document.getElementById('parallelogram-calculate').innerText = triangleCalculate
+    }
+})
+//rhombus btn
+document.getElementById('rhombus-btn').addEventListener('click',function(){
+    const rhombusInput1 = idCall('rhombus-input-1');
+    const rhombusInput2  =idCall ('rhombus-input-2');
+    document.getElementById('rhombus-1').innerText = rhombusInput1;
+    document.getElementById('rhombus-2').innerText = rhombusInput2;
+    const rhombusCalculateId =  document.getElementById('rhombus-calculated-value');
+    const rhombusCalculate = calculateValue(rhombusInput1,rhombusInput2)
+    rhombusCalculateId.innerText = rhombusCalculate;
+    areaCalculation('rhombus');
+    document.getElementById('rhombus-calculate').innerText = rhombusCalculate
+  
+  })
+
+  //pentagon-btn
+  
+  document.getElementById('pentagon-btn').addEventListener('click',function(){
+    const pentagonInput1 = idCall('pentagon-input-1');
+    const pentagonInput2  =idCall ('pentagon-input-2');
+    document.getElementById('pen-1').innerText = pentagonInput1;
+    document.getElementById('pen-2').innerText = pentagonInput2;
+    const pentagonCalculateId =  document.getElementById('pentagon-calculated-value');
+    const pentagonCalculate = calculateValue(pentagonInput1,pentagonInput2)
+    pentagonCalculateId.innerText = pentagonCalculate;
+    areaCalculation('pentagon');
+    document.getElementById('pentagon-calculate').innerText = pentagonCalculate
+  
+  })
+  //  ellipse btn clicked
+    
+  document.getElementById('ellipse-btn').addEventListener('click',function(){
+    const ellipseInput1 = idCall('ellipse-input-1');
+    const ellipseInput2  =idCall ('ellipse-input-2');
+    document.getElementById('el-1').innerText = ellipseInput1;
+    document.getElementById('el-2').innerText = ellipseInput2;
+    const ellipseCalculateId =  document.getElementById('ellipse-calculated-value');
+    const ellipseCalculate = calculateValue3(ellipseInput1,ellipseInput2)
+    ellipseCalculateId.innerText = ellipseCalculate;
+    areaCalculation('ellipse');
+    document.getElementById('ellipse-calculate').innerText = ellipseCalculate
+  
+  })
+
+
+
 
 
 
