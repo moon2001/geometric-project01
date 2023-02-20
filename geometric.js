@@ -55,41 +55,39 @@ function getRandomColor() {
 })
 //rectangle btn
 document.getElementById('rectangle-btn').addEventListener('click',function(){
-    const triangleInput1 = idCall('rectangle-input-1');
-    const triangleInput2  =idCall ('rectangle-input-2');
-   if(!triangleInput1 || triangleInput1<0 && !triangleInput2 || triangleInput2<0)
-   {
-    alert('Please try again')
-   }
-    else{
-              document.getElementById('rec-1').innerText=triangleInput1;
-              document.getElementById('rec-2').innerText = triangleInput2;
-      const triangleCalculateId =  document.getElementById('rectangle-calculated-value');
-      const triangleCalculate = calculateValue(triangleInput1,triangleInput2)
-      triangleCalculateId.innerText = triangleCalculate;
-      areaCalculation('triangle');
-    document.getElementById('rectangle-calculate').innerText = triangleCalculate
+    const rectangleInput1 = idCall('rectangle-input-1');
+    const rectangleInput2  =idCall ('rectangle-input-2');
+    if(!rectangleInput1|| rectangleInput1<0 && !rectangleInput2|| rectangleInput2<0 )
+    {
+      alert('Please try again');
     }
-})
+    else{
+      document.getElementById('rec-1').innerText = rectangleInput1;
+      document.getElementById('rec-2').innerText = rectangleInput2;
+      const rectangleCalculateId =  document.getElementById('rectangle-calculated-value');
+      const rectangleCalculate = calculateValue2(rectangleInput1,rectangleInput2)
+      rectangleCalculateId.innerText = rectangleCalculate;
+      areaCalculation('rectangle');
+      document.getElementById('rectangle-calculate').innerText = rectangleCalculate;
+    }
+  
+  })
 
 //parallelogram btn
 document.getElementById('parallelogram-btn').addEventListener('click',function(){
-    const triangleInput1 = idCall('parallelogram-input-1');
-    const triangleInput2  =idCall ('parallelogram-input-2');
-   if(!triangleInput1 || triangleInput1<0 && !triangleInput2 || triangleInput2<0)
-   {
-    alert('Please try again')
-   }
-    else{
-              document.getElementById('para-1').innerText=triangleInput1;
-              document.getElementById('para-2').innerText = triangleInput2;
-      const triangleCalculateId =  document.getElementById('parallelogram-calculated-value');
-      const triangleCalculate = calculateValue(triangleInput1,triangleInput2)
-      triangleCalculateId.innerText = triangleCalculate;
-      areaCalculation('parallelogram');
-    document.getElementById('parallelogram-calculate').innerText = triangleCalculate
-    }
+  console.log('btnclicked')
+  const parallelogramInput1 = idCall('parallelogram-input-1');
+  const parallelogramInput2  =idCall('parallelogram-input-2');
+  document.getElementById('para-1').innerText = parallelogramInput1;
+  document.getElementById('para-2').innerText = parallelogramInput2;
+  const parallelogramCalculateId =  document.getElementById('parallelogram-calculated-value');
+  const parallelogramCalculate = calculateValue2(parallelogramInput1,parallelogramInput2)
+  parallelogramCalculateId.innerText = parallelogramCalculate;
+  areaCalculation('parallelogram');
+  document.getElementById('parallelogram-calculate').innerText = parallelogramCalculate
+
 })
+
 //rhombus btn
 document.getElementById('rhombus-btn').addEventListener('click',function(){
     const rhombusInput1 = idCall('rhombus-input-1');
