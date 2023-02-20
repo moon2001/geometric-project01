@@ -89,7 +89,7 @@
                 <img src="images/triangle.png" class="card-img-top w-75 mx-auto mt-3" >
                 <div class="card-body">
                   <h5 class="card-title text-center">Triangle</h5>
-                  <p class="text-center">Area(A) = 0.5 * <span id="tri-1">b</span>* <span id="tri-2">h</span> </p>
+                  <p class="text-center">Area(A) = 0.5 x <span id="tri-1"> b </span> x <span id="tri-2"> h </span> </p>
                   <p class="text-center"><span id="triangle-calculated-value"></span></p>
                   <div class="mb-2 text-center">
                     <input type="text" placeholder="b" id="triangle-input-1"> m 
@@ -108,7 +108,7 @@
                 <div class="card-body">
                   <br>
                   <h5 class="card-title text-center">Rectangle</h5>
-                  <p class="text-center">Area(A) = <span id="rec-1">W</span> * <span id="rec-2">I</span></p>
+                  <p class="text-center">Area(A) = <span id="rec-1"> W </span> x <span id="rec-2">I</span></p>
                  <p class="text-center"> <span id="rectangle-calculated-value"></span> </p>
                   <div class="mb-3 text-center">
                     <input type="text" id="rectangle-input-1" placeholder="w"> m 
@@ -127,14 +127,15 @@
               <div class="card h-100 w-auto" onmouseover="this.style.backgroundColor = getRandomColor()">
                 <img src="images/parallelogram.png" class="card-img-top w-75 mx-auto mt-4" >
                 <div class="card-body">
+                  <br>
                   <h5 class="card-title text-center">Parallelogram</h5>
-                  <p class="text-center">Area(A) = <span id="para-1">b</span> * <span id="para-2">h</span> </p>
+                  <p class="text-center">Area(A) = <span id="para-1">b</span> x <span id="para-2">h</span> </p>
                   <p class="text-center"> <span id="parallelogram-calculated-value"></span> </p> 
                   <div class="mb-3 text-center">
                     <input type="text" id="parallelogram-input-1" placeholder="b"> m 
                     <input type="text" id="parallelogram-input-2" placeholder="h"> m 
                   </div> <br>
-                  <button id="parallelogram-btn" type="button" class="btn btn-dark w-100 mx-auto mt-3" >CALCULATE</button>
+                  <button id="parallelogram-btn" type="button" class="btn btn-dark w-100 mx-auto" >CALCULATE</button>
                 </div>
               </div>
             </div>
@@ -153,7 +154,7 @@
                   <br>
                   <h5 class="card-title text-center">Rhombus</h5>
                   <br>
-                  <p class="text-center">Area(A) = 0.5* <span id="rhombus-1"> d <sub>1</sub> </span> * <span id="rhombus-2">d <sub>2</sub> </span> </p>
+                  <p class="text-center">Area(A) = 0.5 x <span id="rhombus-1"> d <sub>1</sub> </span> x <span id="rhombus-2">d <sub>2</sub> </span> </p>
                   <p class="text-center"> <span id="rhombus-calculated-value"></span> </p>
                   <div class="mb-4 mt-2 text-center">
                     <input type="text" id="rhombus-input-1" placeholder="d=16m">m 
@@ -169,11 +170,12 @@
 
             <div class="col ps-2">
               <div class="card h-auto w-100" onmouseover="this.style.backgroundColor = getRandomColor()">
-                <br>
-                <img src="images/pentagon.png" class="card-img-top w-75 mx-auto mt-1" alt="...">
+                
+                <img src="images/pentagon.png" class="card-img-top w-75 mx-auto mt-1">
                 <div class="card-body">
                   <h5 class="card-title text-center">Pentagon</h5>
-                  <p class="text-center">Area(A) = 0.5* <span id="pen-1">d</span> * <span id="pen-2">d</span> </p>
+                  <br>
+                  <p class="text-center">Area(A) = 0.5 x <span id="pen-1"> p </span> x <span id="pen-2"> b </span> </p>
                   <p class="text-center"><span id="pentagon-calculated-value"></span></p>
                   <div class="mb-3 text-center">
                     <input type="text" id="pentagon-input-1" placeholder="p=16m"> m
@@ -195,7 +197,7 @@
                 <div class="card-body">
                   <br>
                   <h5 class="card-title text-center">Ellipse</h5>
-                  <p class="text-center">Area(A) = &pi;<span id="el-1">a</span><span id="el-2">b</span> </p>
+                  <p class="text-center">Area(A) = &pi; x <span id="el-1">a</span> x <span id="el-2">b</span> </p>
                   <p class="text-center"><span id="ellipse-calculated-value"></span> </p>
                   <div class="mb-4 text-center">
                     <br>
@@ -228,16 +230,16 @@
              <br>
 
             <li id="rhombus">
-              Rhombus: <span id="rhombus-calculate"></span>m<sup>2</sup>
+              Rhombus: <span id="rhombus-calculate"></span> m<sup>2</sup>
               </li>
               <br>
 
             <li id="pentagon">
-             Pentagon: <span id="pentagon-calculate"></span>m<sup>2</sup>
+             Pentagon: <span id="pentagon-calculate"></span> m<sup>2</sup>
             </li>
             <br>
             <li id="ellipse">
-              Ellipse: <span id="ellipse-calculate"></span>m<sup>2</sup>
+              Ellipse: <span id="ellipse-calculate"></span> m<sup>2</sup>
              
             </li>
           </ul>
